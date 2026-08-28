@@ -1,0 +1,6 @@
+# Crawling is allowed on purpose. The noindex meta tag in index.html is what
+# keeps this build out of search results, and a crawler has to fetch the page
+# to read it — "Disallow: /" would hide the tag and can still leave a bare URL
+# listed if anyone links here.
+User-agent: *
+Allow: /
