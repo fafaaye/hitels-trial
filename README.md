@@ -2,11 +2,36 @@
 
 Static build of the `Desktop - Home` frame from the [Hitels Website Figma file](https://www.figma.com/design/0bx3Si4ObEyKJ6XgLEETra/Hitels-Website?node-id=43-3671).
 
+**Live:** <https://fafaaye.github.io/hitels-trial/>
+
+Locally:
+
 ```bash
 python3 -m http.server 8080
 ```
 
 Then open <http://localhost:8080>. No build step, no dependencies.
+
+## Deploying
+
+GitHub Pages serves `main` from the repo root. To ship a change:
+
+```bash
+git add -A && git commit -m "..." && git push
+```
+
+Pages rebuilds in under a minute. Check status with `gh api repos/fafaaye/hitels-trial/pages --jq .status`.
+
+The repo is **public** — GitHub Pages needs a paid plan to serve a private repo,
+so the source, the Hitels branding and the pricing in it are all world-readable.
+`index.html` carries `noindex, nofollow` and `robots.txt` allows crawling so that
+tag is actually read, which keeps the page out of search results but does not make
+it secret. If it needs to be genuinely private, move to Netlify or Cloudflare Pages —
+both serve private repos on their free tier and support password protection.
+
+For a custom domain (e.g. `preview.hitels.is`): add a `CNAME` file containing the
+domain, point a DNS `CNAME` record at `fafaaye.github.io`, then enable HTTPS in the
+repo's Pages settings.
 
 | File | What it holds |
 |---|---|
