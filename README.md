@@ -12,6 +12,29 @@ python3 -m http.server 8080
 
 Then open <http://localhost:8080>. No build step, no dependencies.
 
+## Editing content
+
+There is no CMS. All copy is inline in the HTML, with each section fenced by a
+banner comment. Edit the file, commit, push — Pages rebuilds in under a minute.
+
+Common targets in `index.html`: the hero headline (`<h1>`), the three
+`.plan__price` lines, the FAQ `<details>` blocks, and the phone/email in the
+footer.
+
+### Why no build step
+
+For a stakeholder prototype, a generator buys publishing workflow that a demo
+does not need. The cost is that the nav and footer are copy-pasted across the
+four pages — fine at four, not fine at ten. When that tips, or when someone
+non-technical needs to publish, the upgrade path is:
+
+- **Eleventy** — posts become Markdown, the index and post pages generate
+  themselves, RSS included. Needs a GitHub Actions workflow to build on push.
+  The HTML and CSS here become the templates unchanged.
+- **Eleventy + Decap CMS** — the above plus a visual editor at `/admin` that
+  commits to Git. The auth broker can't run on GitHub Pages, so this means
+  moving to Netlify, which also lets the repo go private again.
+
 ## Deploying
 
 GitHub Pages serves `main` from the repo root. To ship a change:
@@ -35,7 +58,9 @@ repo's Pages settings.
 
 | File | What it holds |
 |---|---|
-| `index.html` | Every section, in frame order |
+| `index.html` | The home page — every section, in frame order |
+| `blog.html` | Blog index |
+| `blog/*.html` | One file per post |
 | `styles.css` | Figma variables as CSS custom properties, then section styles |
 | `main.js` | Mobile nav, testimonial carousel |
 | `checks.js` | Console-run assertions for the above (see the file header) |
