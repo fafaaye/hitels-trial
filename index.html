@@ -1,0 +1,511 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hitels — Turn website visitors into direct bookings</title>
+<meta name="description" content="Hitels builds award-winning, bespoke hotel websites and seamless booking engines. No templates. No DIY builders.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Schibsted+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<!-- ═══════════ HERO ═══════════ -->
+<header class="hero">
+  <div class="hero__glow" aria-hidden="true"></div>
+  <div class="hero__texture" aria-hidden="true"></div>
+
+  <nav class="nav" aria-label="Primary">
+    <a class="nav__logo" href="#" aria-label="Hitels — home">
+      <img src="assets/img/logo-hitels.svg" alt="" width="88" height="24">
+    </a>
+    <ul class="nav__links">
+      <li><a href="#offerings">Booking engine</a></li>
+      <li><a href="#offerings">Custom website</a></li>
+      <li><a href="#benefits">About us</a></li>
+      <li><a href="#pricing">Pricing</a></li>
+      <li><a href="#stories">Resources</a></li>
+      <li><a href="#contact">Contact us</a></li>
+    </ul>
+    <a class="btn btn--white btn--sm nav__cta" href="#contact">
+      <img src="assets/img/icon-calendar-nav.svg" alt="" width="16" height="16">
+      Book a demo
+    </a>
+    <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="nav-links">
+      <span class="visually-hidden">Menu</span>
+      <span class="nav__burger" aria-hidden="true"></span>
+    </button>
+  </nav>
+
+  <div class="hero__inner">
+    <div class="hero__content">
+      <h1>Turn website visitors into direct bookings</h1>
+      <p class="hero__sub">We build award-winning, bespoke hotel websites and seamless booking engines. No templates. No DIY builders. Just a premium digital presence &ldquo;done-for-you&rdquo; from start to finish.</p>
+      <div class="hero__actions">
+        <a class="btn btn--yellow" href="#contact">
+          <img src="assets/img/icon-calendar.svg" alt="" width="20" height="20">
+          Book a demo
+        </a>
+        <a class="btn btn--white" href="#contact">
+          <img src="assets/img/icon-chat.svg" alt="" width="20" height="20">
+          Contact us
+        </a>
+      </div>
+    </div>
+
+    <div class="hero__visual" aria-hidden="true">
+      <div class="hero__mac"><img src="assets/img/mac-mockup.png" alt=""></div>
+      <div class="hero__phone"><img src="assets/img/phone-mockup.png" alt=""></div>
+    </div>
+  </div>
+
+  <div class="logos">
+    <p class="logos__label">Trusted by 19 partners and counting</p>
+    <div class="logos__ticker">
+      <div class="logos__track">
+        <ul class="logos__set">
+          <li class="wordmark wordmark--rentals"><b>afell</b>rentals</li>
+          <li class="wordmark wordmark--vintage"><span>VINTAGE</span><small>APARTMENT HOTEL</small></li>
+          <li class="wordmark wordmark--konvin"><span>KONVIN</span><small>HOTEL</small></li>
+          <li class="wordmark wordmark--spaced">BLACK SAND HOTEL</li>
+          <li class="wordmark wordmark--knox">KNOX</li>
+          <li class="wordmark wordmark--muli">Hotel <i>M&uacute;li</i></li>
+          <li class="wordmark wordmark--aurora">Aurora Farm</li>
+          <li class="wordmark wordmark--blue"><span class="wordmark__dot"></span>BLUE VACATIONS</li>
+          <li class="wordmark wordmark--eyja">EYJA <small>GULDSMEDEN</small></li>
+          <li class="wordmark wordmark--downtown">REYKJAVIK <small>DOWNTOWN</small></li>
+        </ul>
+        <ul class="logos__set" aria-hidden="true">
+          <li class="wordmark wordmark--rentals"><b>afell</b>rentals</li>
+          <li class="wordmark wordmark--vintage"><span>VINTAGE</span><small>APARTMENT HOTEL</small></li>
+          <li class="wordmark wordmark--konvin"><span>KONVIN</span><small>HOTEL</small></li>
+          <li class="wordmark wordmark--spaced">BLACK SAND HOTEL</li>
+          <li class="wordmark wordmark--knox">KNOX</li>
+          <li class="wordmark wordmark--muli">Hotel <i>M&uacute;li</i></li>
+          <li class="wordmark wordmark--aurora">Aurora Farm</li>
+          <li class="wordmark wordmark--blue"><span class="wordmark__dot"></span>BLUE VACATIONS</li>
+          <li class="wordmark wordmark--eyja">EYJA <small>GULDSMEDEN</small></li>
+          <li class="wordmark wordmark--downtown">REYKJAVIK <small>DOWNTOWN</small></li>
+        </ul>
+      </div>
+
+      <div class="framer-badge" aria-label="Framer Partner">
+        <svg viewBox="0 0 100 100" role="img" aria-hidden="true">
+          <defs>
+            <!-- both arcs run left→right so each label reads upright -->
+            <path id="fb-top" d="M11,50 a39,39 0 0 1 78,0"></path>
+            <path id="fb-bottom" d="M14,50 a36,36 0 0 0 72,0"></path>
+          </defs>
+          <circle cx="50" cy="50" r="50" fill="#130C3C"></circle>
+          <text class="framer-badge__text"><textPath href="#fb-top" startOffset="50%" text-anchor="middle">FRAMER</textPath></text>
+          <text class="framer-badge__text" dy="8"><textPath href="#fb-bottom" startOffset="50%" text-anchor="middle">PARTNER</textPath></text>
+          <path d="M40 33h20v12H50l10 12H40V45h10z" fill="#fff"></path>
+        </svg>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+<!-- ═══════════ PRODUCT OFFERINGS ═══════════ -->
+<section class="section" id="offerings">
+  <div class="container">
+    <div class="section__head section__head--center">
+      <h2>Everything you need to scale direct revenue</h2>
+      <p class="lead">We don&rsquo;t just give you the tools; we build the engine for you.</p>
+    </div>
+
+    <div class="offer-grid">
+      <article class="offer">
+        <!-- ponytail: Figma composites these two card images from live sub-frames.
+             Rebuilt in markup from the real photography rather than one flat export. -->
+        <div class="offer__art offer__art--light" aria-hidden="true">
+          <div class="minisite">
+            <div class="minisite__bar"><i></i><i></i><i></i></div>
+            <img src="assets/img/room-warm.png" alt="">
+          </div>
+          <div class="minisite minisite--tall">
+            <div class="minisite__bar"><i></i><i></i><i></i></div>
+            <img src="assets/img/ui-site-light.png" alt="">
+          </div>
+          <div class="minisite minisite--dark">
+            <div class="minisite__bar"><i></i><i></i><i></i></div>
+            <img src="assets/img/room-teal.jpg" alt="">
+            <span class="minisite__cap">Modern comfort<br>in two locations</span>
+          </div>
+          <div class="minisite minisite--dark">
+            <div class="minisite__bar"><i></i><i></i><i></i></div>
+            <img src="assets/img/lobby.jpg" alt="">
+            <span class="minisite__cap minisite__cap--lg">Just voted the best<br>hotel in Reykjav&iacute;k</span>
+          </div>
+          <div class="minisite minisite--dark">
+            <div class="minisite__bar"><i></i><i></i><i></i></div>
+            <img src="assets/img/room-dark.png" alt="">
+            <span class="minisite__cap minisite__cap--center">BOUTIQUE<br>LUXURY,<br>REDEFINED.</span>
+          </div>
+        </div>
+
+        <div class="offer__body">
+          <p class="eyebrow">Custom websites</p>
+          <h3>Award-winning design. Zero templates.</h3>
+          <p>We design and build blazing-fast, visually stunning websites tailored perfectly to your brand. Built with advanced SEO to rank higher and flawless UX to keep guests on your site instead of bouncing to an aggregator.</p>
+          <a class="btn btn--dark btn--sm" href="#pricing">
+            Explore Custom Websites
+            <img src="assets/img/icon-arrow-right.svg" alt="" width="16" height="16">
+          </a>
+        </div>
+      </article>
+
+      <article class="offer">
+        <div class="offer__art offer__art--dark" aria-hidden="true">
+          <div class="bookui">
+            <div class="bookui__card bookui__card--wide">
+              <span class="bookui__title">Stillness composed in warmth</span>
+              <div class="bookui__rows"><i></i><i></i><i></i></div>
+              <div class="bookui__thumbs">
+                <img src="assets/img/room-white.png" alt="">
+                <img src="assets/img/room-suite.png" alt="">
+                <img src="assets/img/room-warm.png" alt="">
+              </div>
+            </div>
+            <div class="bookui__card">
+              <span class="bookui__title">Double Room photos</span>
+              <div class="bookui__thumbs bookui__thumbs--grid">
+                <img src="assets/img/room-suite.png" alt="">
+                <img src="assets/img/room-white.png" alt="">
+                <img src="assets/img/restaurant.png" alt="">
+                <img src="assets/img/room-dark.png" alt="">
+              </div>
+            </div>
+            <div class="bookui__card bookui__card--sm">
+              <span class="bookui__title">The Superior Konudagur Experience</span>
+              <div class="bookui__rows"><i></i><i></i></div>
+            </div>
+            <div class="bookui__card bookui__card--sm">
+              <span class="bookui__title">Congratulations Adam W.</span>
+              <span class="bookui__pill">Confirmed</span>
+              <img class="bookui__wide" src="assets/img/room-warm.png" alt="">
+            </div>
+          </div>
+        </div>
+
+        <div class="offer__body">
+          <p class="eyebrow">Booking engine</p>
+          <h3>Frictionless checkouts. Higher conversions.</h3>
+          <p>Turn browsing visitors into confirmed guests. We integrate a seamless, beautifully branded booking flow directly into your site, eliminating the frustration that causes cart abandonment.</p>
+          <a class="btn btn--dark btn--sm" href="#pricing">
+            Explore Hitels Booking Engine
+            <img src="assets/img/icon-arrow-right.svg" alt="" width="16" height="16">
+          </a>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ TESTIMONIAL ═══════════ -->
+<section class="section testimonials" aria-label="Customer testimonials">
+  <div class="container testimonials__inner">
+    <!-- ponytail: portrait not exportable from Figma (quota) — swap assets/img/testimonial-oskar.jpg in. -->
+    <div class="testimonials__portrait" role="img" aria-label="Portrait of the quoted customer"></div>
+
+    <div class="testimonials__body">
+      <figure class="quote is-active" data-quote>
+        <blockquote>&ldquo;We were thrilled with Hitels&rsquo; customized solutions for our website. Their expertise in creating a stylish and intuitive online presence has transformed how we connect with our guests. The new site not only looks superb but also enhances our customer interaction, leading to a notable increase in direct bookings.&rdquo;</blockquote>
+        <figcaption>
+          <span class="quote__name">&Oacute;skar</span>
+          <span class="quote__role">Hotels Manager</span>
+        </figcaption>
+      </figure>
+
+      <figure class="quote" data-quote hidden>
+        <blockquote>&ldquo;Moving to Hitels paid for itself inside a season. Guests find us, book in a couple of taps, and we finally keep the margin that used to disappear into commissions.&rdquo;</blockquote>
+        <figcaption>
+          <span class="quote__name">Katr&iacute;n</span>
+          <span class="quote__role">General Manager</span>
+        </figcaption>
+      </figure>
+
+      <div class="testimonials__nav">
+        <button class="iconbtn" type="button" data-quote-prev aria-label="Previous testimonial">
+          <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M12.5 4L6.5 10l6 6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <button class="iconbtn" type="button" data-quote-next aria-label="Next testimonial">
+          <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M7.5 4l6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ STORIES ═══════════ -->
+<section class="section" id="stories">
+  <div class="container">
+    <div class="section__head section__head--center">
+      <p class="eyebrow">Customer stories</p>
+      <h2>Proven to increase direct revenue</h2>
+    </div>
+  </div>
+
+  <!-- ponytail: the row deliberately overflows the container, exactly as the Figma frame clips it. -->
+  <div class="stories">
+    <article class="story story--wide">
+      <div class="story__img"><img src="assets/img/story-exeter.jpg" alt="Exeter Hotel exterior"><span class="story__logo">EXETER HOTEL</span></div>
+      <p>Exeter increases direct bookings by 23%</p>
+    </article>
+    <article class="story">
+      <div class="story__img"><img src="assets/img/story-oddsson.jpg" alt="An Oddsson guest room"><span class="story__logo">O<span class="story__logo-alt">ᴅ</span>DSSON</span></div>
+      <p>Oddsson increases organic traffic by 76%</p>
+    </article>
+    <article class="story">
+      <div class="story__img"><img src="assets/img/story-aurora.jpg" alt="An Aurora Farm guest room"><span class="story__logo story__logo--serif">Aurora Farm</span></div>
+      <!-- ponytail: stat is clipped by the frame edge in Figma — confirm the real number. -->
+      <p>Aurora Farm increases direct bookings by 31%</p>
+    </article>
+  </div>
+</section>
+
+<!-- ═══════════ BENEFITS ═══════════ -->
+<section class="section" id="benefits">
+  <div class="container">
+    <div class="section__head section__head--center section__head--narrow">
+      <h2>You run the hotel, we run the website</h2>
+      <p class="lead">You are a hospitality expert, not a web developer. Stop wasting hours wrestling with broken integrations or restrictive templates. We handle the design, the tech, and the optimization&mdash;giving you peace of mind and more time to focus on your guests.</p>
+    </div>
+
+    <div class="benefits">
+      <article class="benefit">
+        <h3>UX &amp; Design Driven</h3>
+        <p>First impressions matter. We design visually stunning websites that reflect the unique atmosphere of your hotel.</p>
+        <div class="benefit__art" aria-hidden="true">
+          <div class="laptop">
+            <div class="laptop__screen"><img src="assets/img/ui-site-dark.png" alt=""></div>
+            <div class="laptop__base"></div>
+          </div>
+        </div>
+      </article>
+
+      <article class="benefit">
+        <h3>Advanced SEO Optimization</h3>
+        <p>We build your site from the ground up with advanced technical SEO, ensuring your hotel stands out.</p>
+        <div class="benefit__art" aria-hidden="true">
+          <dl class="stats">
+            <div><dt>Total clicks</dt><dd>5.5K</dd></div>
+            <div><dt>Impressions</dt><dd>120K</dd></div>
+            <div><dt>Avg. CTR</dt><dd>7.5%</dd></div>
+          </dl>
+          <svg class="chart" viewBox="0 0 328 132" preserveAspectRatio="none">
+            <g stroke="#E1E1EC" stroke-width="1">
+              <line x1="0" y1="0.5" x2="328" y2="0.5"/><line x1="0" y1="33.5" x2="328" y2="33.5"/>
+              <line x1="0" y1="66.5" x2="328" y2="66.5"/><line x1="0" y1="99.5" x2="328" y2="99.5"/>
+              <line x1="0" y1="131.5" x2="328" y2="131.5"/>
+            </g>
+            <polyline points="4,98 40,86 76,78 112,84 148,110 184,88 220,66 256,50 292,36 324,26"
+              fill="none" stroke="#5D4BFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <ul class="chart__axis"><li>1/1</li><li>6/1</li><li>14/1</li><li>20/1</li><li>28/1</li></ul>
+        </div>
+      </article>
+
+      <article class="benefit">
+        <h3>Data-Driven Performance</h3>
+        <p>Your site is meticulously crafted to guide visitors smoothly toward making a direct reservation.</p>
+        <div class="benefit__art benefit__art--heat" aria-hidden="true">
+          <div class="heatmap"></div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ PRICING ═══════════ -->
+<section class="section" id="pricing">
+  <div class="container">
+    <div class="section__head section__head--center section__head--narrow">
+      <h2>Affordable plans for every hotel</h2>
+      <p class="lead">Explore Hitels&rsquo; flexible pricing plans, designed for hotels of all sizes. Boost direct bookings and online presence with our scalable solutions. Choose your perfect plan today!</p>
+    </div>
+
+    <div class="plans">
+      <article class="plan">
+        <header class="plan__head">
+          <h3>Custom website</h3>
+          <span class="plan__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="1.6"/><ellipse cx="12" cy="12" rx="4" ry="9" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M3.5 9.5h17M3.5 14.5h17" stroke="currentColor" stroke-width="1.6"/></svg>
+          </span>
+        </header>
+        <p class="plan__desc">A stunning, high-converting digital presence built from scratch to elevate your brand.</p>
+        <p class="plan__price">ISK 199.900 <span>/ month</span></p>
+        <ul class="plan__features">
+          <li>Access to web specialists</li>
+          <li>Custom design</li>
+          <li>Analytics dashboard</li>
+          <li>CMS access (2 seats)</li>
+          <li>External link to booking engine like GODO</li>
+          <li>Up to 20 beautifully crafted pages</li>
+        </ul>
+        <a class="btn btn--dark btn--block" href="#contact">Subscribe today</a>
+      </article>
+
+      <article class="plan">
+        <header class="plan__head">
+          <h3>Booking Engine</h3>
+          <span class="plan__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><rect x="3.5" y="5.5" width="17" height="15" rx="2.5" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M3.5 10h17M8 3.5v4M16 3.5v4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+          </span>
+        </header>
+        <p class="plan__desc">Integrate a seamless booking engine into your existing website to maximize revenue.</p>
+        <p class="plan__price">1,8% <span>/ direct booking</span></p>
+        <ul class="plan__features">
+          <li>UI matched perfectly to your brand</li>
+          <li>Frictionless booking flow</li>
+          <li>Custom add-ons and up-selling</li>
+          <li>Precision event tracking</li>
+          <li>Secure backend</li>
+          <li>Web hosting</li>
+        </ul>
+        <a class="btn btn--dark btn--block" href="#contact">Get a quote</a>
+      </article>
+
+      <article class="plan plan--featured">
+        <header class="plan__head">
+          <h3>Booking Engine</h3>
+          <span class="plan__icons" aria-hidden="true">
+            <span class="plan__icon">
+              <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="1.6"/><ellipse cx="12" cy="12" rx="4" ry="9" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M3.5 9.5h17M3.5 14.5h17" stroke="currentColor" stroke-width="1.6"/></svg>
+            </span>
+            <span class="plan__icon">
+              <svg viewBox="0 0 24 24"><rect x="3.5" y="5.5" width="17" height="15" rx="2.5" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M3.5 10h17M8 3.5v4M16 3.5v4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+            </span>
+          </span>
+        </header>
+        <p class="plan__desc">Combine custom website with a frictionless booking flow to obliterate OTA fees.</p>
+        <p class="plan__price">179.900 + 1,5%</p>
+        <ul class="plan__features">
+          <li>Everything in Custom website</li>
+          <li>Everything in Booking engine</li>
+          <li>Content engine starter pack</li>
+          <li>Ongoing conversion optimization</li>
+          <li>Web hosting</li>
+          <li>Onboarding and setup</li>
+        </ul>
+        <a class="btn btn--white btn--block" href="#contact">Get a quote</a>
+      </article>
+    </div>
+
+    <p class="plans__more">
+      <a class="link-arrow" href="#contact">View pricing details <img src="assets/img/icon-arrow-right.svg" alt="" width="16" height="16"></a>
+    </p>
+  </div>
+</section>
+
+<!-- ═══════════ FAQ ═══════════ -->
+<section class="section" id="faq">
+  <div class="container faq">
+    <h2 class="faq__title">Frequently asked questions</h2>
+
+    <div class="faq__list">
+      <details class="faq__item" open>
+        <summary><span>What exactly does Hitels do?</span></summary>
+        <p>We provide two core services for hotels: custom website design and a direct booking engine. You can use either service individually, or combine both.</p>
+      </details>
+      <details class="faq__item" open>
+        <summary><span>Do I have to use both the website and the booking engine?</span></summary>
+        <p>No. Our services are completely modular. We can build you a new website, integrate our booking engine into your current site, or do both.</p>
+      </details>
+      <details class="faq__item" open>
+        <summary><span>How is the booking engine implemented?</span></summary>
+        <p>We handle the entire technical setup for you. We seamlessly integrate the engine into either your existing website or a new custom site we build.</p>
+      </details>
+      <details class="faq__item" open>
+        <summary><span>How is your platform different from Wordpress or Squarespace?</span></summary>
+        <p>We don&rsquo;t use DIY templates. We offer a premium, &ldquo;done-for-you&rdquo; service, custom-building your site in Framer for superior design, speed, and SEO.</p>
+      </details>
+      <details class="faq__item" open>
+        <summary><span>Who is this best for?</span></summary>
+        <p>Independent and boutique hotels looking to elevate their brand, increase direct bookings, and stop paying high commissions to OTAs.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ═══════════ CTA + FOOTER ═══════════ -->
+<footer class="closer" id="contact">
+  <div class="closer__glow" aria-hidden="true"></div>
+
+  <div class="container closer__cta">
+    <h2>Ready to turn your website into your most profitable booking channel?</h2>
+    <p>Let&rsquo;s discuss how a bespoke digital presence can increase your direct bookings and save you thousands in commissions.</p>
+    <div class="hero__actions hero__actions--center">
+      <a class="btn btn--yellow" href="mailto:hi@hitels.is">
+        <img src="assets/img/icon-calendar.svg" alt="" width="20" height="20">
+        Book a demo
+      </a>
+      <a class="btn btn--white" href="mailto:hi@hitels.is">
+        <img src="assets/img/icon-chat.svg" alt="" width="20" height="20">
+        Contact us
+      </a>
+    </div>
+  </div>
+
+  <div class="container foot">
+    <div class="foot__brand">
+      <a class="foot__logo" href="#" aria-label="Hitels — home">
+        <img src="assets/img/logo-hitels.svg" alt="" width="88" height="24">
+        <small>by Rewinz</small>
+      </a>
+      <p class="foot__tag">Say hi to your new hotel platform</p>
+      <ul class="foot__contact">
+        <li>
+          <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4 4.5h3l1.5 4-2 1.2a9 9 0 004 4l1.2-2 4 1.5v3A1.5 1.5 0 0114 17.5 12.5 12.5 0 012.5 6 1.5 1.5 0 014 4.5z" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/></svg>
+          <a href="tel:+3545478001">+354 5478001</a>
+        </li>
+        <li>
+          <svg viewBox="0 0 20 20" aria-hidden="true"><rect x="2.5" y="4.5" width="15" height="11" rx="1.5" fill="none" stroke="currentColor" stroke-width="1.4"/><path d="M3 5.5l7 5 7-5" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/></svg>
+          <a href="mailto:hi@hitels.is">Join our mailing list</a>
+        </li>
+      </ul>
+    </div>
+
+    <nav class="foot__col" aria-label="Product">
+      <h3>Product</h3>
+      <ul>
+        <li><a href="#offerings">Booking Engine</a></li>
+        <li><a href="#offerings">Custom Website</a></li>
+        <li><a href="#pricing">Pricing</a></li>
+      </ul>
+    </nav>
+
+    <nav class="foot__col" aria-label="Company">
+      <h3>Company</h3>
+      <ul>
+        <li><a href="#benefits">About us</a></li>
+        <li><a href="#contact">Contact us</a></li>
+        <li><a href="#stories">Resources</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <div class="container foot__bar">
+    <ul class="foot__social">
+      <li><a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24"><rect x="3.5" y="3.5" width="17" height="17" rx="5" fill="none" stroke="currentColor" stroke-width="1.6"/><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="1.6"/><circle cx="17" cy="7" r="1.2" fill="currentColor"/></svg></a></li>
+      <li><a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24"><path d="M13.5 21v-8h2.7l.4-3h-3.1V8.2c0-.9.3-1.5 1.5-1.5h1.7V4c-.3 0-1.3-.1-2.4-.1-2.4 0-4.1 1.5-4.1 4.2V10H7.4v3h2.8v8z" fill="currentColor"/></svg></a></li>
+      <li><a href="#" aria-label="LinkedIn"><svg viewBox="0 0 24 24"><path d="M6.9 20H4V9h2.9zM5.4 7.6A1.7 1.7 0 116.9 6a1.6 1.6 0 01-1.5 1.6zM20 20h-2.9v-5.6c0-1.5-.5-2.5-1.8-2.5a2 2 0 00-1.8 1.3 2.4 2.4 0 00-.1.9V20h-2.9V9h2.9v1.3a2.9 2.9 0 012.6-1.5c1.9 0 3.9 1.2 3.9 4.2z" fill="currentColor"/></svg></a></li>
+    </ul>
+    <p class="foot__copy">&copy; 2024 Hitels. All rights reserved.</p>
+    <ul class="foot__legal">
+      <li><a href="#">Cookie Settings</a></li>
+      <li><a href="#">Privacy Policy</a></li>
+    </ul>
+  </div>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>
