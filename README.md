@@ -30,10 +30,15 @@ non-technical needs to publish, the upgrade path is:
 
 - **Eleventy** — posts become Markdown, the index and post pages generate
   themselves, RSS included. Needs a GitHub Actions workflow to build on push.
-  The HTML and CSS here become the templates unchanged.
+  The HTML and CSS here become the templates unchanged. MIT, no paid tier.
 - **Eleventy + Decap CMS** — the above plus a visual editor at `/admin` that
-  commits to Git. The auth broker can't run on GitHub Pages, so this means
-  moving to Netlify, which also lets the repo go private again.
+  commits to Git. Also MIT and free, but the login needs an OAuth broker, and
+  that part is in flux: the classic Netlify Identity + Git Gateway setup that
+  most tutorials describe is on its way out, because **Git Gateway is
+  deprecated** (Netlify Identity itself continues). Pick the broker
+  deliberately — DecapBridge has a free tier, or self-host a small OAuth
+  function on Cloudflare Workers or Netlify Functions, both free. Verify what
+  is current before committing to a tutorial.
 
 ## Deploying
 
